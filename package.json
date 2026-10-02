@@ -1,0 +1,42 @@
+{
+  "name": "neon-serpent-cosmos",
+  "version": "1.0.0",
+  "description": "Neon Serpent: Cosmos — a premium arcade snake game across five sectors of space. Species, cosmetics, a season pass and more.",
+  "scripts": {
+    "dev": "vite",
+    "icons": "node scripts/icons.mjs",
+    "prebuild": "node scripts/icons.mjs",
+    "build": "vite build",
+    "preview": "vite preview --port 4173",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "node scripts/e2e.cjs",
+    "check": "npm test && npm run build"
+  },
+  "keywords": [
+    "snake",
+    "game",
+    "arcade",
+    "html5",
+    "canvas",
+    "pwa",
+    "vite"
+  ],
+  "author": "mpaktit",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "playwright": "^1.63.0",
+    "sharp": "^0.34.5",
+    "vite": "^6.4.3",
+    "vitest": "^3.2.7"
+  },
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mpaktit/notion.git"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

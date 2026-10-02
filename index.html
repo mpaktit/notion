@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'" />
+  <meta name="referrer" content="no-referrer" />
+  <meta name="theme-color" content="#05070F" />
+  <meta name="description" content="Neon Serpent: Cosmos — a premium arcade snake game. 8 cosmic species, 5 sectors of space, abilities, cosmetics, a battle pass and daily challenges." />
+  <meta property="og:title" content="Neon Serpent: Cosmos" />
+  <meta property="og:description" content="The last snake game you'll ever need. Pilot cosmic serpents across five sectors of space." />
+  <meta property="og:image" content="./og.png" />
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <link rel="icon" href="./icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="./icon-192.png" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>Neon Serpent: Cosmos</title>
+</head>
+<body>
+  <div id="app">
+    <div id="space"></div>
+    <div id="stage"><canvas id="board" aria-label="Game board" role="img"></canvas></div>
+    <header id="topbar"></header>
+    <main id="screens" aria-live="polite"></main>
+    <nav id="nav" aria-label="Main"></nav>
+    <div id="hud" aria-hidden="false"></div>
+    <div id="modals"></div>
+    <div id="toasts" aria-live="polite"></div>
+  </div>
+  <noscript>Neon Serpent: Cosmos needs JavaScript to run.</noscript>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
